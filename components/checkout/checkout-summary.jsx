@@ -52,7 +52,6 @@ const CheckoutSummary = ({ cart }) => {
                     }}
                     passHref
                   >
-                    <a>
                       <div className={itemStyles.placeholder}>
                         <Image
                           objectFit="cover"
@@ -62,7 +61,6 @@ const CheckoutSummary = ({ cart }) => {
                           alt={`${i.title}`}
                         />
                       </div>
-                    </a>
                   </Link>
                 </figure>
                 <div className={itemStyles.controls}>
@@ -75,7 +73,7 @@ const CheckoutSummary = ({ cart }) => {
                         }}
                         passHref
                       >
-                        <a>{i.title}</a>
+                        {i.title}
                       </Link>
                       <p className={itemStyles.size}>Size: {i.variant.title}</p>
                       <p className={itemStyles.size}>

@@ -33,10 +33,8 @@ export const NavBar = () => {
 
   return (
     <div className={styles.container}>
-      <Link href="/">
-        <a style={{ width: "125px" }}>
+      <Link href="/" style={{ width: "125px" }}>
           <Image src={MedusaLogo} height="40px" width="100%" alt="logo" />
-        </a>
       </Link>
       <div className={styles.navBtnContainer}>
         <div className={styles.navLinks}>

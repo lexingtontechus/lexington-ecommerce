@@ -53,7 +53,6 @@ const CartView = () => {
                     }}
                     passHref
                   >
-                    <a>
                       <div className={styles.placeholder}>
                       <Image
                         objectFit="cover"
@@ -63,7 +62,6 @@ const CartView = () => {
                         alt={`${i.title}`}
                       />
                       </div>
-                    </a>
                   </Link>
                 </figure>
                 <div className={styles.controls}>
@@ -76,7 +74,7 @@ const CartView = () => {
                         }}
                         passHref
                       >
-                        <a>{i.title}</a>
+                        {i.title}
                       </Link>
                       <p className={styles.size}>Size: {i.variant.title}</p>
                       <p className={styles.size}>

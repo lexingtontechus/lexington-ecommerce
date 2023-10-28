@@ -62,7 +62,6 @@ export const Payment = () => {
                       }}
                       passHref
                     >
-                      <a>
                       <div className={itemStyles.placeholder}>
                         <Image
                           objectFit="cover"
@@ -72,7 +71,6 @@ export const Payment = () => {
                           alt={`${i.title}`}
                         />
                       </div>
-                      </a>
                     </Link>
                   </figure>
                   <div className={itemStyles.controls}>
@@ -85,7 +83,7 @@ export const Payment = () => {
                           }}
                           passHref
                         >
-                          <a>{i.title}</a>
+                          {i.title}
                         </Link>
                         <p className={itemStyles.size}>
                           Size: {i.variant.title}

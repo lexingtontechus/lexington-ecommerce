@@ -5,20 +5,14 @@ import styles from "../../styles/nav-bar.module.css";
 const NavLinks = () => {
   return (
     <div>
-      <Link href="https://www.medusa-commerce.com/">
-        <a className={styles.navBtn} target="_blank" rel="noreferrer">
+      <Link href="https://www.medusa-commerce.com/" className={styles.navBtn} target="_blank" rel="noreferrer">
           Medusa
-        </a>
       </Link>
-      <Link href="https://nextjs.org/docs/getting-started/">
-        <a className={styles.navBtn} target="_blank" rel="noreferrer">
+      <Link href="https://nextjs.org/docs/getting-started/" className={styles.navBtn} target="_blank" rel="noreferrer">
           Next.js
-        </a>
       </Link>
-      <Link href="https://stripe.com/docs/">
-        <a className={styles.navBtn} target="_blank" rel="noreferrer">
+      <Link href="https://stripe.com/docs/" className={styles.navBtn} target="_blank" rel="noreferrer">
           Stripe
-        </a>
       </Link>
     </div>
   );

@@ -25,7 +25,7 @@ export default function Home({ products }) {
             <h1 style={{ margin: 0 }}>Next.js starter</h1>
           </div>
           <div className={styles.links}>
-            <a
+            <Link
               href="https://docs.medusa-commerce.com/"
               target="_blank"
               rel="noreferrer"
@@ -45,8 +45,8 @@ export default function Home({ products }) {
               >
                 <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path>
               </svg>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/medusajs/nextjs-starter-medusa"
               target="_blank"
               rel="noreferrer"
@@ -55,7 +55,7 @@ export default function Home({ products }) {
             >
               View on GitHub
               <FaGithub />
-            </a>
+            </Link>
           </div>
           <p className={styles.description}>
             Build blazing-fast client applications on top of a modular headless
@@ -93,21 +93,19 @@ export default function Home({ products }) {
                         }}
                         passHref
                       >
-                        <a target="_blank">
-                          <h2>{p.title}</h2>
-                          <div className={store.imgHolder}>
-                            <Image
-                              src={p.thumbnail}
-                              alt="thumbnail"
-                              width={250}
-                              height={300}
-                            ></Image>
-                          </div>
-                          <p>{p.description}</p>
-                          <p style={{ color: "#8a4af3" }}>
-                            {formatPrices(cart, p.variants[0])}
-                          </p>
-                        </a>
+                        <h2>{p.title}</h2>
+                        <div className={store.imgHolder}>
+                          <Image
+                            src={p.thumbnail}
+                            alt="thumbnail"
+                            width={250}
+                            height={300}
+                          ></Image>
+                        </div>
+                        <p>{p.description}</p>
+                        <p style={{ color: "#8a4af3" }}>
+                          {formatPrices(cart, p.variants[0])}
+                        </p>
                       </Link>
                     </div>
                   );
@@ -119,55 +117,59 @@ export default function Home({ products }) {
       <footer className={footer.container}>
         <div className={footer.main}>
           <div className={footer.listA}>
-            <Link href="/">
-              <a style={{ width: "125px" }}>
-                <Image src={MedusaLogo} height="40px" width="100%" alt="logo" />
-              </a>
+            <Link href="/" style={{ width: "125px" }}>
+              <Image src={MedusaLogo} height="40px" width="100%" alt="logo" />
             </Link>
             <span>© 2022 Medusa – All Rights Reserved</span>
             <span>
               Catch us on{" "}
               <Link href="mailto:Catch us on hello@medusajs.com">
-                <a style={{ fontWeight: "bold" }}>hello@medusajs.com</a>
+                hello@medusajs.com
               </Link>
             </span>
           </div>
           <div className={footer.listA}>
             <h4>Docs</h4>
             <li>
-              <Link href="https://docs.medusajs.com/tutorial/set-up-your-development-environment/">
-                <a target="_blank">Tutorial</a>
+              <Link
+                href="https://docs.medusajs.com/tutorial/set-up-your-development-environment/"
+                target="_blank"
+              >
+                Tutorial
               </Link>
             </li>
           </div>
           <div className={footer.listA}>
             <h4>Community</h4>
             <li>
-              <Link href="https://twitter.com/medusajs">
-                <a target="_blank">Twitter</a>
+              <Link href="https://twitter.com/medusajs" target="_blank">
+                Twitter
               </Link>
             </li>
             <li>
-              <Link href="https://discord.com/invite/medusajs">
-                <a target="_blank">Discord</a>
+              <Link href="https://discord.com/invite/medusajs" target="_blank">
+                Discord
               </Link>
             </li>
           </div>
           <div className={footer.listA}>
             <h4>More</h4>
             <li>
-              <Link href="https://medusajs.com/">
-                <a target="_blank">Medusa Home</a>
+              <Link href="https://medusajs.com/" target="_blank">
+                Medusa Home
               </Link>
             </li>
             <li>
-              <Link href="https://github.com/medusajs/medusa">
-                <a target="_blank">GitHub Repo</a>
+              <Link href="https://github.com/medusajs/medusa" target="_blank">
+                GitHub Repo
               </Link>
             </li>
             <li>
-              <Link href="https://ky5eo2x1u81.typeform.com/get-in-touch">
-                <a target="_blank">Contact us</a>
+              <Link
+                href="https://ky5eo2x1u81.typeform.com/get-in-touch"
+                target="_blank"
+              >
+                Contact us
               </Link>
             </li>
           </div>
