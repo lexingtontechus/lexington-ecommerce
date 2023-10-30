@@ -77,9 +77,9 @@ Medusa is an open-source headless commerce engine that enables developers to cre
 
 ## Updated UI
 
-![This is an image](https://github.com/Seek4samurai/Medusa-NextJs-StoreFront/blob/main/public/UI/Home-UI.png)
+![This is an image](/public/UI/Home-UI.png)
 
-https://user-images.githubusercontent.com/69115613/171359414-6f747e84-ecf1-4d54-86a0-f3e77d0e9eaa.mov
+http://localhost:8000/UI/UI-Demo.webm
 
 ## Check out Figma
 
